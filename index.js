@@ -57,7 +57,7 @@ client.on('messageCreate', async msg => {
                 n: 1,
                 max_tokens: 4000,
                 stop: null,
-                temperature: 0.7
+                temperature: 0.7 
             });
 
             msg.channel.send(`<@${msg.author.id}>: ${response.data.choices[0].text}`);
